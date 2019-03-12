@@ -75,7 +75,7 @@ SELECT * FROM people;
 DELETE FROM people WHERE name = 'Jordan Davidson';
 SELECT * FROM people;
 -- 8.  The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this.
-INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '24:00');
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
 SELECT * FROM movies;
 -- 9.  The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
 UPDATE movies SET show_time = '19:15' WHERE title = 'Guardians of the Galaxy 2';
@@ -84,3 +84,5 @@ SELECT * FROM movies;
 -- 1.  Research how to delete multiple entries from your table in a single command.
 DELETE FROM movies WHERE id BETWEEN 5 AND 15;
 SELECT * FROM movies;
+
+-- SELECT * FROM movies WHERE year = 2017;
